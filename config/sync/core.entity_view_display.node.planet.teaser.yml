@@ -1,0 +1,29 @@
+uuid: 8db7d237-3e74-4488-967c-7b9447ac44e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.planet.feeds_item
+    - field.field.node.planet.field_description
+    - field.field.node.planet.field_tags
+    - field.field.node.planet.field_url
+    - node.type.planet
+  module:
+    - user
+id: node.planet.teaser
+targetEntityType: node
+bundle: planet
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  feeds_item: true
+  field_description: true
+  field_tags: true
+  field_url: true
+  langcode: true

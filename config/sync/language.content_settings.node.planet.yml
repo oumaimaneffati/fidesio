@@ -1,0 +1,11 @@
+uuid: 757dcd89-cf63-49a3-9cdb-6fcb3f277501
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.planet
+id: node.planet
+target_entity_type_id: node
+target_bundle: planet
+default_langcode: site_default
+language_alterable: false
