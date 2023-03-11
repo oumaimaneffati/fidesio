@@ -27,10 +27,15 @@ Inside the php container:
  ************************ Les choix techniques ************************
 
 1/ Pour importer le flux rss, le module Feeds est utilisé avec une configuration d'import avec URL
+![img_1.png](img_1.png)
+
+
 2/ Pour déclencher l'import 6h chaque matin, plusieurs solutions sont possibles, parmi ces solutions : 
 
 - Utiliser le crontab et lancer la commande drush d'import de feed ou un cron personnalisé
 - Utiliser le module Ultimate cron avec la config crontab (la solution que j'ai utilisé)
+
+
 
 3/ Pour la page de recherche j'ai utilisé les modules search api / module facets pour afficher le checkbox des tags
 
