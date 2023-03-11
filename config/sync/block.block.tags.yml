@@ -1,0 +1,29 @@
+uuid: c908a690-573a-4a8a-a3fc-95a49b359af8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - facets.facet.tags
+  module:
+    - facets
+    - system
+  theme:
+    - fidesio
+id: tags
+theme: fidesio
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:tags'
+settings:
+  id: 'facet_block:tags'
+  label: Tags
+  provider: facets
+  label_display: visible
+  block_id: tags
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

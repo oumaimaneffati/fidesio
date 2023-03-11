@@ -1,0 +1,22 @@
+uuid: b9e2346d-7d92-4ae4-a37c-50121c5189c3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fidesio
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: fidesio_messages
+theme: fidesio
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }

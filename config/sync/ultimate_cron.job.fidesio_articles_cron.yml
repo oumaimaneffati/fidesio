@@ -1,0 +1,30 @@
+uuid: a9522882-3d19-4ecf-b3e5-2b904f866f00
+langcode: fr
+status: true
+dependencies:
+  module:
+    - fidesio_articles
+title: 'Default cron handler'
+id: fidesio_articles_cron
+weight: 0
+module: fidesio_articles
+callback: fidesio_articles_cron
+scheduler:
+  id: crontab
+  configuration:
+    rules:
+      - '0 6 * * *'
+    catch_up: 0
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

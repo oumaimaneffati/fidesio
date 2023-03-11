@@ -1,0 +1,23 @@
+uuid: c3734e92-0848-4968-bae4-8bfbf21cd443
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_url
+    - node.type.article_fidesio
+  module:
+    - link
+id: node.article_fidesio.field_url
+field_name: field_url
+entity_type: node
+bundle: article_fidesio
+label: URL
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

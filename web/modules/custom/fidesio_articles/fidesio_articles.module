@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\feeds\Entity\Feed;
+
+/**
+ * Implements hook_theme().
+ */
+function fidesio_articles_theme() {
+  return array(
+    'block_last_articles' => array(
+      'variables' => array('articles' => NULL),
+    ),
+  );
+}
+
+/**
+ * Import feed cron configured in ultimate cron inspired from drush command of import feed
+ * Implements hook_cron().
+ */
+function fidesio_articles_cron() {
+  $ids = \Drupal::entityQuery('feeds_feed')
+    ->condition('type','article_fidesio')
+    ->condition('status', 1)
+    ->sort('imported')
+    ->execute();
+ if (empty($ids))
+ {
+   return;
+ }
+  foreach (Feed::loadMultiple($ids) as $feed) {
+    if (!$feed->isLocked()) {
+    $feed->import();
+    }
+  }
+}

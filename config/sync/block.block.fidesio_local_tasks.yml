@@ -1,0 +1,22 @@
+uuid: 33b7f510-19c8-4ab2-a2f7-63da32fc8e22
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - fidesio
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: fidesio_local_tasks
+theme: fidesio
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

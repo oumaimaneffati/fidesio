@@ -1,0 +1,14 @@
+uuid: 544b3c0f-e0bf-4e41-b0c4-18ac88b35c09
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: fidesio
+name: Fidesio
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: prefix

@@ -1,0 +1,3 @@
+services:
+  fidesio_articles_service:
+    class: Drupal\fidesio_articles\Service\FidesioArticlesService

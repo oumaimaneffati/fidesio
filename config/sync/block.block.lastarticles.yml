@@ -1,0 +1,22 @@
+uuid: b9d03a0e-262a-4983-862d-61a979d75dda
+langcode: fr
+status: true
+dependencies:
+  module:
+    - fidesio_articles
+  theme:
+    - fidesio
+id: lastarticles
+theme: fidesio
+region: sidebar_second
+weight: 0
+provider: null
+plugin: last_articles_block
+settings:
+  id: last_articles_block
+  label: 'Last articles'
+  provider: fidesio_articles
+  label_display: visible
+  articles_number: '3'
+  cache_invalidation: '1'
+visibility: {  }

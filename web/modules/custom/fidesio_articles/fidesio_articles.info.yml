@@ -1,0 +1,5 @@
+name: Fidesio articles
+type: module
+description: A module for defining custom functionalites on articles
+core: 8.x
+package: Fidesio custom

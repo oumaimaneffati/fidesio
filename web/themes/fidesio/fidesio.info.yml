@@ -1,0 +1,5 @@
+name: Fidesio Theme
+type: theme
+description: Subtheme for fidesio
+core_version_requirement: ^8
+base theme: bartik

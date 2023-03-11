@@ -1,0 +1,22 @@
+uuid: 2a4b5945-d895-490d-bfcd-431f7dbd6dcb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fidesio
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: fidesio_breadcrumbs
+theme: fidesio
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''ariane'
+  provider: system
+  label_display: '0'
+visibility: {  }

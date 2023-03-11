@@ -1,0 +1,11 @@
+uuid: 757dcd89-cf63-49a3-9cdb-6fcb3f277501
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.article_fidesio
+id: node.article_fidesio
+target_entity_type_id: node
+target_bundle: article_fidesio
+default_langcode: site_default
+language_alterable: false

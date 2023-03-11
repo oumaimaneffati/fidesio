@@ -1,0 +1,75 @@
+uuid: b868b11e-4e3a-4725-abe8-6b750d29692e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.article_fidesio.field_description
+    - field.field.node.article_fidesio.field_url
+    - node.type.article_fidesio
+  module:
+    - node
+id: article_fidesio
+label: 'Article fidesio'
+description: ''
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: syndication
+parser_configuration: {  }
+processor: 'entity:node'
+processor_configuration:
+  langcode: fr
+  insert_new: 1
+  update_existing: 1
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: article_fidesio
+custom_sources:
+  title:
+    value: title
+    machine_name: title
+    type: blank
+    label: title
+  description:
+    value: description
+    machine_name: description
+    type: blank
+    label: description
+  link:
+    value: link
+    machine_name: link
+    type: blank
+    label: link
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique: {  }
+    settings:
+      language: null
+  -
+    target: field_description
+    map:
+      value: description
+    settings:
+      language: ''
+      format: full_html
+  -
+    target: field_url
+    map:
+      uri: url
+      title: ''
+    settings:
+      language: null
